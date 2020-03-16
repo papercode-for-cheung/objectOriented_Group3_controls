@@ -2,14 +2,10 @@
 案例4-1
 创建一个主窗口
 """
-
-
 import sys
 from PyQt5.QtWidgets import QMainWindow,QApplication,QDialog,QTextEdit,QAction
 from PyQt5.QtGui import QIcon #图标
 
-
-"""创建一个类，从主窗口QMainWindow继承"""
 class FirstMainWin(QMainWindow):
 #class FirstMainWin(QDialog):
     def __init__(self):
