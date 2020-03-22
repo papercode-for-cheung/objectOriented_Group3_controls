@@ -5,10 +5,10 @@
 
 
 import sys#获取api
-from PyQt5.QtWidgets import QMainWindow,QApplication
+from PyQt5.QtWidgets import QMainWindow,QApplication,QWidget
 from PyQt5.QtGui import QIcon #图标
 
-class IconForm(QMainWindow):
+class IconForm(QWidget):
     def __init__(self):
         super().__init__()
         self.initUI()
@@ -20,6 +20,7 @@ class IconForm(QMainWindow):
         #设置主窗口的标题
         self.setWindowTitle('设置窗口图标')
         #设置窗口图标
+        #；苹果系统的电脑必须用“ico”类型的图片格式
         self.setWindowIcon(QIcon('./images/SDAU.jpg'))#窗口的setWindowIcon设置的图标可以在Windows系统下显示
 
 

@@ -35,7 +35,8 @@ class QLabelDemo(QWidget):
         label3.setPixmap(QPixmap('./images/SDAU2.jpg'))
 
         # 当参数为True时，响应a标签的内容，当参数为False时，响应与槽绑定的信号
-        label4.setOpenExternalLinks(True)
+        label4.setOpenExternalLinks(False)
+
         label4.setText("<a href='http://www.dlu.edu.cn/'>欢迎来到大连大学</a>")
         label4.setAlignment(Qt.AlignRight)
         label4.setToolTip('这是一个超级链接')
